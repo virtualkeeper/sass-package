@@ -1,0 +1,22 @@
+{
+  "name": "worth-financial",
+  "version": "1.0.0",
+  "description": "The sass package for the Worth Financial visual layer.",
+  "main": "index.js",
+  "dependencies": {
+    "clean-css": "^5.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1",
+    "sass-loader": "^12.0.0",
+    "webpack": "^5.38.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch sass -o css"
+  },
+  "author": "Darrin Ezell",
+  "license": "ISC"
+}
