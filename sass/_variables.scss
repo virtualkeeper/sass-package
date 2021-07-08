@@ -1,3 +1,4 @@
+//TODO: Get font types for project
 // Fonts
 @font-face {
     font-family: "DIN Bold";
@@ -20,6 +21,15 @@
 @font-face {
     font-family: "Pe-icon-7-stroke";
     src: url("/fonts/Pe-icon-7-stroke.woff");
+}
+// Testing
+
+.test {
+    color: #fff;
+
+    .inner-test img {
+        color: #fff;
+    }
 }
 
 // Body
