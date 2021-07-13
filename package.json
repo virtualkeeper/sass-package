@@ -26,10 +26,10 @@
         "webpack": "^5.38.1"
     },
     "scripts": {
-        "clean": "gulp clean --force",
-        "dev": "sass --quiet --watch sass/style.scss:../../public/assets/css/style.css sass/components:../public/assets/css/components ",
-        "prefix": "gulp longhand",
-        "compress": "sass --style=compressed sass/style.scss:sass/css/style.css sass/components:sass/css/components"
+        "dev": "sass --quiet --watch sass/style.scss:../public/assets/css/style.css sass/components:../public/assets/css/components ",
+        "prod-prefix": "gulp longhand",
+        "prod-compress": "sass --no-source-map --style=compressed sass/style.scss:sass/tmp/style.css sass/components:sass/tmp/components",
+        "clean": "gulp clean --force --quiet"
     },
     "browserslist": [
         "> 1%",
