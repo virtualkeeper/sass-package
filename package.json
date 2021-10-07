@@ -1,6 +1,6 @@
 {
-    "name": "worth-financial",
-    "version": "1.0.0",
+    "name": "sass-nugget",
+    "version": "1.1.0",
     "description": "The sass package is for the visual layer.",
     "repository": "https://github.com/virtualkeeper/sass-package",
     "main": "index.js",
