@@ -9,7 +9,7 @@ function longhand(cb) {
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer() ]))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('../public/assets/css/'))
+        .pipe(gulp.dest('./css/'))
         cb();
 }
 function prodCSS(cb) {
@@ -20,17 +20,17 @@ function prodCSS(cb) {
 }
 
 function clean(cb) {
-    // del(['../../public/assets/css/'], function(err, deleted) {
+    // del(['./css/'], function(err, deleted) {
     //     if (err) throw err;
     //     // deleted files
     //     console.log(deleted);
     // });
 
 // sync
-    del.sync('../public/assets/css/*', {force: true});
+    del.sync('./css/*', {force: true});
 //
 // promise
-    del.promise('../public/assets/css/', {force: true})
+    del.promise('./css/', {force: true})
         .then(function(files) {
             console.log(files);
         })
