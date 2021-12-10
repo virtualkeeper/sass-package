@@ -1,11 +1,12 @@
 const gulp = require('gulp')
+const sass = require('gulp-sass')(require('sass'))
 const autoprefixer = require('autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
 const postcss = require('gulp-postcss')
 var del = require('delete');
 
 function longhand(cb) {
-    return gulp.src('./sass/tmp/*')
+    return gulp.src('.sass/temp/*')
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer() ]))
         .pipe(sourcemaps.write('.'))
