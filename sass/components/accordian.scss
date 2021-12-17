@@ -1,0 +1,11 @@
+// CSS for accorians
+
+.accordion-button {
+  border-bottom: 1px solid $gray-300 !important;
+
+  &:not(.collapsed) {
+    color: $red;
+    background-color: $white !important;
+    box-shadow: none 0 0 0 none !important;
+  }
+}

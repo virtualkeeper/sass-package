@@ -1,0 +1,42 @@
+// CSS for Buttons
+
+.btn-secondary,
+.btn-success,
+.btn-danger,
+.btn-warning,
+.btn-info {
+  color: $white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+  }
+}
+
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-info {
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+  }
+}
+
+.btn-light,
+.btn-outline-light {
+  border: 1px solid $gray-600;
+  color: $gray-600;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid $gray-800 !important;
+    background-color: $gray-300 !important;
+    color: $gray-800 !important;
+  }
+}

@@ -1,6 +1,50 @@
-// This is a comment that will not show up on a compile
+// CSS for tables
 
-/** This is a comment that will show up upon compile **/
- .box {
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
- }
+.table:not(.table-bordered) {
+  thead {
+    border-radius: 5px;
+
+    tr {
+      color: $white;
+      background-color: $blue;
+
+      th {
+        &:first-child{
+          border-radius:5px 0 0 0;
+        }
+        &:last-child{
+          border-radius: 0 5px 0 0;
+        }
+      }
+
+    }
+  }
+}
+
+.table:not(.table-hover,.table-striped,.table-bordered) {
+  tbody {
+    tr:last-of-type {
+      td,
+      th {
+        &:first-child {
+          border-radius: 0 0 0 5px;
+        }
+        &:last-child{
+          border-radius: 0 0 5px 0;
+        }
+      }
+    }
+  }
+}
+
+.table.table-bordered {
+  thead {
+    border-radius: 5px;
+
+    tr {
+      color: $white;
+      background-color: $blue;
+      border: 1px solid $blue;
+    }
+  }
+}
