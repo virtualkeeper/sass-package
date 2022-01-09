@@ -34,7 +34,7 @@
     },
     "scripts": {
         "dev": "sass --quiet --watch sass/style.scss:css/style.css sass/components/:css/components",
-        "init":  "sass --quiet --style=compressed --no-source-map sass/style.scss:sass/temp/standard/style.css sass/components/:sass/temp/standard/components",
+        "init": "sass --quiet --style=compressed --no-source-map sass/style.scss:sass/temp/standard/style.css sass/components/:sass/temp/standard/components",
         "prefix": "postcss sass/temp/standard/* --use autoprefixer -d css/",
         "prod": "init && prefix",
         "clean": "gulp clean --force --quiet"
